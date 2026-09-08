@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ 
+        startOnLoad: true, 
+        theme: 'neutral',
+        themeVariables: {
+            fontFamily: 'Segoe UI',
+            fontSize: '18px',
+            primaryColor: '#e1e8f0',
+            primaryBorderColor: '#34495e',
+            lineColor: '#2c3e50',
+            textColor: '#2c3e50',
+        }
+    });
+  </script>
+  <style>
+    body { background: white; padding: 40px; display: flex; justify-content: center; align-items: flex-start; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="mermaid">
+    graph TD
+        A[<b>Indian Army</b>] --> B[<b>Corps of Electronics & Mechanical Engineers <br> (EME)</b>]
+        B --> C[<b>510 Army Base Workshop, Meerut Cantt</b>]
+        C --> D[<b>WSG</b>]
+        C --> E[<b>ERG</b>]
+        C --> F[<b>Armament Group</b>]
+        C --> G[<b>Other Groups</b>]
+        
+        D --> H[Vehicle Repair]
+        D --> I[Welding]
+        D --> J[Electrical]
+        D --> K[Mechanical]
+        D --> L[QA/QC]
+        D --> M[Inventory]
+        
+        style A fill:#2c3e50,stroke:#1a252f,stroke-width:2px,color:#fff
+        style B fill:#34495e,stroke:#2c3e50,stroke-width:2px,color:#fff
+        style C fill:#2980b9,stroke:#21618c,stroke-width:2px,color:#fff
+        style D fill:#bdc3c7,stroke:#95a5a6,stroke-width:2px
+        style E fill:#bdc3c7,stroke:#95a5a6,stroke-width:2px
+        style F fill:#bdc3c7,stroke:#95a5a6,stroke-width:2px
+        style G fill:#bdc3c7,stroke:#95a5a6,stroke-width:2px
+  </div>
+</body>
+</html>
